@@ -35,7 +35,7 @@ public class QuizScoresActivity extends AppCompatActivity implements AsyncTaskDe
         prefMain = getApplicationContext().getSharedPreferences("com.example.studymore.scores", 0); // 0 - for private mode
         //if it is the first time, then add a generic flash card
         if (prefMain.getBoolean("firstRunScores", true)) {
-            // Do first run stuff here then set 'firstrun' as false
+            // Do first run stuff here then set 'firstRunScores' as false
             //Open the Information Box
             showCustomPopupMenu();
             // using the following line to edit/commit prefs (no longer first time, no longer add)
@@ -66,6 +66,8 @@ public class QuizScoresActivity extends AppCompatActivity implements AsyncTaskDe
         recyclerView.setAdapter(scoreAdapter);
     }
 
+    //source: https://stackoverflow.com/questions/27642093/how-to-create-a-do-you-want-to-continue-alert-box
+    //for first time opening
     private void showCustomPopupMenu() {
         //setup the alert builder
         //show a dialog box the first time the user opens the application

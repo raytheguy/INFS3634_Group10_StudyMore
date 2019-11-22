@@ -251,6 +251,7 @@ public class FactsActivity extends AppCompatActivity implements AsyncTaskDelegat
     }
 
     //for first time usage
+    //source: https://stackoverflow.com/questions/27642093/how-to-create-a-do-you-want-to-continue-alert-box
     private void showCustomPopupMenu() {
         //setup the alert builder
         //show a dialog box the first time the user opens the application
