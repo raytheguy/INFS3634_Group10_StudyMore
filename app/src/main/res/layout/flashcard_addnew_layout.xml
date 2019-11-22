@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/newflashcard">
+
+        <Button
+            android:id="@+id/addFlashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flash_back_editText" />
+
+        <EditText
+            android:id="@+id/flash_back_editText"
+            android:layout_width="269dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="15dp"
+            android:background="#70FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Text"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/flashFrontTextview"
+            app:layout_constraintTop_toBottomOf="@+id/flashBackTextView" />
+
+        <EditText
+            android:id="@+id/flash_front_editText"
+            android:layout_width="268dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="15dp"
+            android:background="#70FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Text"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/flashFrontTextview"
+            app:layout_constraintTop_toBottomOf="@+id/flashFrontTextview" />
+
+        <TextView
+            android:id="@+id/flashFrontTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="265dp"
+            android:text="Card Front"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/flashBackTextView"
+            android:layout_width="91dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:text="Card Back"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/flashFrontTextview"
+            app:layout_constraintTop_toBottomOf="@+id/flash_front_editText" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Add a Flash Card"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StudyMore</string>
+    <string name="title_activity_facts">FactsActivity</string>
+    <string name="title_activity_encyclopedia">Encyclopedia of Breeds</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_flash_card">FlashCardActivity</string>
+    <string name="save_score">Save Score</string>
+    <string name="next_question">Next Question</string>
+    <string name="check_answer">Check Answer</string>
+</resources>
