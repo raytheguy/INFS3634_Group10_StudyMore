@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     SharedPreferences prefMain = null;
     //to create score recording
-    //version type final
+    //version type final v2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

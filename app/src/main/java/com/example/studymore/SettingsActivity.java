@@ -30,7 +30,6 @@ public class SettingsActivity extends AppCompatActivity implements AsyncTaskDele
         deleteFlashCards = findViewById(R.id.flashCardDeleteBtn);
         deleteScores = findViewById(R.id.scoreDeleteBtn);
 
-        //ToDO Delete Functions
         //onCLick listener for delete flashcards
         deleteFlashCards.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +48,6 @@ public class SettingsActivity extends AppCompatActivity implements AsyncTaskDele
         });
 
         //onClick listener for delete scores
-        //:ToDo ON CLICK LISTENER TO DELETE SCORES
         deleteScores.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View myView) {
