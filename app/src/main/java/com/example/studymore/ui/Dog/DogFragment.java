@@ -116,6 +116,7 @@ public class DogFragment extends Fragment {
 
         //API Url
         String url;
+        //api: https://thedogapi.com/
         //if the user entered nothing, then use the search all url
         if (userSearchText.equals("")) {
             url = "https://api.thedogapi.com/v1/breeds?limit=1000";

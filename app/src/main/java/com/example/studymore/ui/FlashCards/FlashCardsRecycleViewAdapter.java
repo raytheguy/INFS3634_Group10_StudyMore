@@ -93,6 +93,7 @@ public class FlashCardsRecycleViewAdapter extends RecyclerView.Adapter<FlashCard
     }
 
     public void onButtonShowPopupWindowClick(View view, String backOfCard) {
+        // based off code from: https://stackoverflow.com/questions/5944987/how-to-create-a-popup-window-popupwindow-in-android
         // inflate the layout of the popup window
         LayoutInflater inflater = (LayoutInflater)
                 mContext.getSystemService(LAYOUT_INFLATER_SERVICE);
@@ -131,14 +132,8 @@ public class FlashCardsRecycleViewAdapter extends RecyclerView.Adapter<FlashCard
         deleteFlashCardsAsyncTask.setCardIdToPut(cardIdToPut);
         deleteFlashCardsAsyncTask.execute();
 
-        //no longer used as it no longer uses the main thread!
-//        fcdb.flashCardsDao().deleteByCardId(cardIdToPut);
-
         Snackbar.make(view, "Deleted FlashCard, Please Reopen Activity!", Snackbar.LENGTH_SHORT)
                 .setAction("Action", null).show();
-//        setData(flashContent);
-//        notifyItemRemoved(position);
-//        notifyItemRangeChanged(position, flashContent.size());
         //reload the activity to get an updated recycle view
         Intent intentPlusButton = new Intent(view.getContext(), FlashCardActivity.class);
         mContext.startActivity(intentPlusButton);

@@ -45,6 +45,7 @@ public class FlashCardActivity extends AppCompatActivity implements AsyncTaskDel
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash_card);
 
+        //horizontal recycle view source: https://www.youtube.com/watch?v=94rCjYxvzEE&t=1102s
         //create part of RecyclerView
         layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView = findViewById(R.id.recyclerViewFlash);

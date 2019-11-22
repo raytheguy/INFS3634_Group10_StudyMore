@@ -12,6 +12,7 @@ import com.example.studymore.R;
 
 import java.util.List;
 
+//based off: https://www.youtube.com/watch?v=bSMZknDI6bg&t=231s
 public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHolder> {
 
     //create a list of youtube videos

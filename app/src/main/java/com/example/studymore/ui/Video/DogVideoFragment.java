@@ -31,15 +31,8 @@ public class DogVideoFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        youtubeVideos.add(new YoutubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/pJ7MpH5PHJI\" frameborder=\"0\" allowfullscreen></iframe>"));
-        youtubeVideos.add(new YoutubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/ngl1QsdTrqc\" frameborder=\"0\" allowfullscreen></iframe>"));
-        youtubeVideos.add(new YoutubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/zqAAXKND2bw\" frameborder=\"0\" allowfullscreen></iframe>"));
-        youtubeVideos.add(new YoutubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/ronOj53K_GQ\" frameborder=\"0\" allowfullscreen></iframe>"));
-        youtubeVideos.add(new YoutubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/bFT6TxGr7jw\" frameborder=\"0\" allowfullscreen></iframe>"));
-        youtubeVideos.add(new YoutubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/FrMDJgAWDhU\" frameborder=\"0\" allowfullscreen></iframe>"));
-
+        //source: https://www.youtube.com/watch?v=bSMZknDI6bg&t=231s
         VideoAdapter videoAdapter = new VideoAdapter(youtubeVideos);
-
         recyclerView.setAdapter(videoAdapter);
         return v2;
     }

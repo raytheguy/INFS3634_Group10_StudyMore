@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //source: https://stackoverflow.com/questions/5944987/how-to-create-a-popup-window-popupwindow-in-android
     private void showCustomPopupMenu() {
         //setup the alert builder
         //show a dialog box the first time the user opens the application

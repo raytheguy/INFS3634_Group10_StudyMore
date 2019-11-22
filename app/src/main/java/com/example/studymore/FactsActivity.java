@@ -170,6 +170,8 @@ public class FactsActivity extends AppCompatActivity implements AsyncTaskDelegat
             catOrDogNew = 1;
         }
         System.out.println("Cat Or Dog" + catOrDog);
+        //if radio button is in cat, use cat api else use dog
+        //source: https://cat-fact.herokuapp.com/ and https://dog-api.kinduff.com/ and https://some-random-api.ml
         if (catOrDogNew == 0) {
             url = "https://meowfacts.herokuapp.com/";
         } else {

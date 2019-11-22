@@ -120,6 +120,7 @@ public class CatFragment extends Fragment {
         //API Url
         String url;
         //if the user entered nothing, then use the search all url
+        //api: https://thecatapi.com/
         if (userSearchText.equals("")) {
             url = "https://api.thecatapi.com/v1/breeds?limit=5000";
         }
