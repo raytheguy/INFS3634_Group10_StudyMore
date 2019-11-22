@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     SharedPreferences prefMain = null;
     //to create score recording
-//    public static ArrayList<Score> scoreArrayList;
+    //version type final
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
